@@ -637,7 +637,7 @@
 
     <properties>
         <!-- platform encoding override -->
-        <skipTests>false</skipTests>
+        <skipTests>true</skipTests>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <node.version>v0.10.30</node.version>
@@ -2060,7 +2060,7 @@
 
                         <!-- atlas data directory creates when tests are run from IDE -->
                         <exclude>**/atlas.data/**</exclude>
-                        <exclude>**/${sys:atlas.data}/**</exclude>
+                        <!--<exclude>**/${sys:atlas.data}/**</exclude>-->
                         <exclude>**/policy-store.txt</exclude>
                         <exclude>**/*rebel*.xml</exclude>
                         <exclude>**/*rebel*.xml.bak</exclude>
